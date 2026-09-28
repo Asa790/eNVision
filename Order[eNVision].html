@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - eNVision</title>
+    
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body class="order-page">
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="Assets/Header/LogoEnV.png" alt="Logo eNVision">
+        </div>
+        
+        <nav class="NavigationBar">
+            <clickable>
+                <li><a href="Home[eNVision].html">Home</a></li>
+                <li><a href="Product[eNVision].html">Product</a></li>
+                <li><a href="Reward[eNVision].html">Rewards</a></li>
+                <li><a href="Order[eNVision].html" class="active">Order</a></li>
+                <li><a href="AboutUs[eNVsion].html">About Us</a></li>
+            </clickable>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <form id="orderForm" onsubmit="validateForm(event)">
+            <div class="order-general">
+                
+                <div class="form-inputs-container">
+                    
+                    <div class="form-section">
+                        <h3>1. Service Option</h3>
+                        <div class="form-group">
+                            <label>Pick your package service</label>
+                            <select id="serviceOption">
+                                <option value="">-- Select Service --</option>
+                                <option value="reg">Regular Delivery</option>
+                                <option value="fast">Same Day Delivery</option>
+                            </select>
+                            <div id="errService" class="error-msg">Please select a service!</div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>2. Contact Info</h3>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="custName" placeholder="Jane Doe">
+                            <div id="errName" class="error-msg">Name cannot be empty!</div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <label>Email Address</label>
+                                <input type="text" id="custEmail" placeholder="jane.doe@gmail.com">
+                                <div id="errEmail" class="error-msg">Email must contain both '@' and '.'</div>
+                            </div>
+
+                            <div class="form-group" style="flex: 1;">
+                                <label>Phone Number</label>
+                                <input type="text" id="custPhone" placeholder="08********">
+                                <div id="errPhone" class="error-msg">Please enter a valid phone number!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>3. Shipping Address</h3>
+                        <div class="form-group">
+                            <label>Full Address</label>
+                            <textarea id="custAddr" rows="4" placeholder="Street name, City..."></textarea>
+                            <div id="errAddr" class="error-msg">Address must be at least 15 characters!</div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>4. Add ons (Optional)</h3>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="addon"> Wipes & Cleaning Solution</label>
+                            <label><input type="checkbox" name="addon"> Glasses Hard Case Box</label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>5. Payment Method</h3>
+                        <div class="radio-group">
+                            <label><input type="radio" name="payMethod" value="cash"> Cash</label>
+                            <label><input type="radio" name="payMethod" value="transfer"> Bank Transfer</label>
+                        </div>
+                        <div id="errPay" class="error-msg">Please select a payment method!</div>
+                    </div>
+                </div>
+
+                <aside class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div id="summaryList">
+                            <p>1. Zero Frame: $50.00</p>
+                            <p>Shipping: $0.00</p>
+                        </div>
+                        <hr>
+                        <p class="total-price"><strong id="summaryTotal">Total: $50.00</strong></p>
+                    </div>
+                    
+                    <button type="submit" class="complete-btn">
+                        Complete Order
+                    </button>
+                </aside>
+
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <span>Find us At</span>
+            <div class="social-icons">
+                <a href="#"><img src="Assets/Footer/iconmonstr-instagram-11-240.png" alt="IG"></a>
+                <a href="#"><img src="Assets/Footer/iconmonstr-youtube-10-240.png" alt="YT"></a>
+                <a href="#"><img src="Assets/Footer/iconmonstr-facebook-5-240.png" alt="FB"></a>
+                <a href="#"><img src="Assets/Footer/twitter.png" alt="TW"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="#">Contact Us</a>
+            <a href="#">Our Team</a>
+            <a href="#">Testimonial</a>
+        </div>
+    </footer>
+
+    <script src="validate.js"></script>
+</body>
+</html>

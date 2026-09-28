@@ -1,0 +1,30 @@
+.product-katalog-general {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+
+.katalog-card {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.price {
+    font-family: 'Lekton', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.complete-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #3F0C0C;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
