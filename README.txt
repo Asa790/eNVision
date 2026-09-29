@@ -1,4 +1,4 @@
-<img src="eNVision Preview.png" alt="eNVision Banner - Follow Your Vision" width="800">
+![eNVision Banner - Follow Your Vision](eNVision Preview.png)
 
 1.  Struktur Folder & Modularitas File
     Proyek ini menggunakan pendekatan modular untuk memisahkan logika struktur (HTML), desain (CSS), dan fungsionalitas (JS) agar kode lebih mudah dikelola dan dikembangkan.
