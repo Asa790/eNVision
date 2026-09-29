@@ -1,4 +1,4 @@
-![eNVision Banner - Follow Your Vision](eNVision Preview.png)
+![eNVision Banner - Follow Your Vision](eNVision%20Preview.png)
 
 1.  Struktur Folder & Modularitas File
     Proyek ini menggunakan pendekatan modular untuk memisahkan logika struktur (HTML), desain (CSS), dan fungsionalitas (JS) agar kode lebih mudah dikelola dan dikembangkan.
